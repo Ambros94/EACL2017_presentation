@@ -1,499 +1,267 @@
 <!doctype html>
 <html>
-	<head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<title>EACL2017- Luca Ambrosini</title>
+    <title>EACL2017- Luca Ambrosini</title>
 
-		<link rel="stylesheet" href="css/aolab.css">
-		<link rel="stylesheet" href="css/reveal.css">
-		<link rel="stylesheet" href="css/theme/solarized.css">
+    <link rel="stylesheet" href="css/aolab.css">
+    <link rel="stylesheet" href="css/reveal.css">
+    <link rel="stylesheet" href="css/theme/black.css">
 
-		<!-- Theme used for syntax highlighting of code -->
-		<link rel="stylesheet" href="lib/css/zenburn.css">
+    <!-- Theme used for syntax highlighting of code -->
+    <link rel="stylesheet" href="lib/css/zenburn.css">
 
     <!-- Github buttons js -->
     <script async defer src="https://buttons.github.io/buttons.js"></script>
 
-		<!-- Printing and PDF exports -->
-		<script>
-			var link = document.createElement( 'link' );
-			link.rel = 'stylesheet';
-			link.type = 'text/css';
-			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
-			document.getElementsByTagName( 'head' )[0].appendChild( link );
-		</script>
-	</head>
-	<body>
-		<div class="reveal">
-			<div class="slides">
-				<section>
-                  <h2><span class="aolab-select">E</span>uropean Chapter of the <span class="aolab-select">A</span>ssociation
-            for </h2>
-          <h1><span class="aolab-select">C</span>omputational <span class="aolab-select">L</span>inguistics</h1>
-          <h5>@SUPSI</h5>
-          <h6>ISIN Lunch</h6>
+    <!-- Printing and PDF exports -->
+    <script>
+        var link = document.createElement('link');
+        link.rel = 'stylesheet';
+        link.type = 'text/css';
+        link.href = window.location.search.match(/print-pdf/gi) ? 'css/print/pdf.css' : 'css/print/paper.css';
+        document.getElementsByTagName('head')[0].appendChild(link);
+    </script>
+</head>
+<body>
+<div class="reveal">
+    <div class="slides">
+        <section>
+            <h2><span class="aolab-select">E</span>uropean Chapter of the <span class="aolab-select">A</span>ssociation
+                for </h2>
+            <h1><span class="aolab-select">C</span>omputational <span class="aolab-select">L</span>inguistics</h1>
+            <h5>Luca Ambrosini</h5>
+            <h6>4 july 2017</h6>
         </section>
         <section>
-          <h2>Presentation avaiable online</h2>
-          <h2>@</h2>
-          <h2><a href="https://ambros94.github.io/EACL2017_presentation/">https://ambros94.github.io/EACL2017_presentation/</a></h2>
+            <section data-background="img/valencia.jpg">
+                <h3>Valencia</h3>
+            </section>
+            <section>
+                <h3>PRHLT Intern</h3>
+                <img src="img/volounteer.JPG" height="600px">
+            </section>
         </section>
         <section>
-          <section>
-            <h2><a href="https://aolab.github.io/">@AoLab</a></h2>
-            <p><span class="aolab-orange">A</span>mirkabir University of Technology I<span class="aolab-orange">o</span>T <span class="aolab-orange">Lab</span>oratory</p>
-          </section>
-          <section>
-            <h2>Parham Alvani</h2>
-            <p>parham.alvani@gmail.com</p>
-            <h2>Mahtab Farrokh</h2>
-            <p>mahtab.farrokh@gmail.com</p>
-          </section>
-          <section>
-            <h2>Who we are?</h2>
             <ul>
-              <li>Amirkabir University of Technology</li>
-              <li>Computer and Information Technology Engineering Department</li>
-              <li>Since June 2015 (Ordibehesht 1394)</li>
+                <li>Introduction</li>
+                <li>EACL Best papers</li>
+                <li>NLP @ ISIN</li>
             </ul>
-            <img src="img/ceit-logo.png" alt="ceit-logo" width="100px">
-            <img src="img/aut-logo.png" alt="aut-logo" width="100px">
-          </section>
-          <section>
-            <h2>What we done?</h2>
+        </section>
+        <section>
             <ul>
-              <li><a href="https://I1820.github.io/">I1820</a>: IoT Platform</li>
-              <li>Home automation system</li>
-							<li>Design multi-sensor hardware</li>
+                <li class="aolab-select">Introduction</li>
+                <li>EACL Best papers</li>
+                <li>NLP @ ISIN</li>
             </ul>
-          </section>
-          <section>
-            <h2>Let's Light the Lamp</h2>
-            <img src="img/light-the-lamp.jpg" alt="Let's Light the Lamp" width="600px">
-          </section>
         </section>
         <section>
-          <ul>
-            <li>Introduction</li>
-            <li>IoT Platforms, Why ?</li>
-            <li>Platforms Review</li>
-          </ul>
+            <section>
+                <h2><span class="aolab-select">N</span>atural <span class="aolab-select">L</span>anguage <span
+                        class="aolab-select">P</span>rocessing ?!</h2>
+                <div>
+                    <header>Wikipedia</header>
+                    <p>
+                        Natural language processing (NLP) is a field of computer science, artificial intelligence and
+                        computational linguistics concerned with the interactions between computers and human (natural)
+                        languages
+                    </p>
+                </div>
+            </section>
+            <section>
+                <h2><span class="aolab-select">N</span>atural <span class="aolab-select">L</span>anguage <span
+                        class="aolab-select">P</span>rocessing ?!</h2>
+                <div>
+                    <header>= <span class="aolab-select">C</span>omputational <span class="aolab-select">L</span>inguistic
+                    </header>
+                    <p>
+                        NLP and CL are two sides of the same coin. The NLP focus is practice while CL is a science
+                        (theory).
+                    </p>
+                </div>
+            </section>
         </section>
         <section>
-          <ul>
-            <li class="aolab-select">Introduction</li>
-            <li>IoT Platforms, Why ?</li>
-            <li>Platforms Review</li>
-          </ul>
-        </section>
-        <section>
-          <section>
-            <h2>IoT ?!</h2>
-            <div>
-              <header>Wikipedia</header>
-              <p>
-              The network of physical objects or <strong>things</strong> embedded with electronics,
-              software, sensors, and connectivity to enable objects to exchange data with the
-              manufacturer, operator and/or other connected devices based on the infrastructure of
-              ITU's Global Standards Initiative
-              </p>
-            </div>
-          </section>
-          <section>
-            <h2>IoT ?!</h2>
-            <div>
-              <header>ITU</header>
-              <p>
-              A global infrastructure for the information society, enabling advanced services
-              by interconnecting (physical and virtual) things based on existing and evolving
-              interoperable information and communication technologies
-              </p>
-            </div>
-          </section>
-          <section>
-            <h2>IoT ?!</h2>
-            <div>
-              <header>Whatis</header>
-              <p>
-              A scenario in which objects, animals or people are provided with unique
-              identifiers and the ability to transfer data over a network without requiring
-              human-to-human or human-to-computer interaction.
-              </p>
-            </div>
-          </section>
-        </section>
-        <section>
-          <h2>What is IoT?</h2>
-          <ul>
-            <li>A <span class="aolab-green">thing</span> in IoT can be any natural or man-made object can be assigned <span class="aolab-green">IP(v6) address</span>.</li>
-            <li>So far, the Internet of Things has been most closely associated with machine-to-machine (M2M) communication.</li>
-            <li>Although the concept wasn’t named until 1999, the Internet of Things has been in development for decades.</li>
-          </ul>
-        </section>
-        <section>
-          <h2>IoT’s Applications</h2>
-          <ul>
-            <li>Environmental monitoring</li>
-            <li>Infrastructure management</li>
-            <li><strong>Smart metering</strong></li>
-            <li>Manufacturing</li>
-            <li>Energy management</li>
-            <li>Medical and healthcare systems</li>
-            <li><strong>Building and home automation</strong></li>
-            <li><strong>Transportation</strong></li>
-            <li>...</li>
-          </ul>
-        </section>
-        <section>
-          <ul>
-            <li>Introduction</li>
-            <li class="aolab-select">IoT Platforms, Why ?</li>
-            <li>Platforms Review</li>
-          </ul>
-        </section>
-        <section>
-          <section>
-            <h2>What is an IoT platform ?</h2>
-            <div>
-              <header>Internet of Things Wiki</header>
-              <p>
-              In simple words the purpose of any IoT device is to connect with other IoT devices and
-              applications (cloud-based mostly) to relay information using internet transfer protocols.
-              </p>
-              <p>
-              The gap between the device sensors and data networks is filled by an <span class="aolab-green">IoT Platform</span>.
-              </p>
-            </div>
-          </section>
-          <section>
-            <h2>What is thier job ?</h2>
-						<ul>
-							<li>Application point of view</li>
-							<li>Things point of view</li>
-						</ul>
-					</section>
-					<section>
-						<h2>Application point of view</h2>
-            <img src="img/platforms-usecase-software.png" alt="platform-usecase-software" height="550px">
-          </section>
-					<section>
-						<h2>Things point of view</h2>
-            <img src="img/platforms-usecase-thing.png" alt="platform-usecase-thing" height="550px">
-					</section>
-        </section>
-        <section>
-          <h2>Platforms in bigger scope</h2>
-          <ul>
-            <li>Data Regulation and Governance</li>
-            <li>IoT Operators</li>
-            <li>Rules and regulations applies on <span class="aolab-orange">IoT Operator</span> instead of <span class="aolab-green">Customers</span></li>
-          </ul>
-        </section>
-        <section>
-          <h2>IoT Platforms vs IoT Middlewares</h2>
-          <ul>
-            <li><span class="aolab-orange">Middleware</span> connects different, often complex and already existing programs that were not originally designed to be connected.</li>
-            <li>
-            Middleware is part of the architecture enabling connectivity for huge numbers of <span class="aolab-green">diverse</span>
-            Things by providing a connectivity layer for <span class="aolab-orange">sensors</span> and also for the <span class="aolab-orange">application layers</span> that provide services that ensure effective communications among software.
-            </li>
-          </ul>
-        </section>
-        <section>
-          <h2>Middleware is a connectivity layer</h2>
-          <img src="img/platforms-1.png" alt="Platforms over view">
-        </section>
-        <section>
-          <h2>Middleware is a connectivity layer (Complex View)</h2>
-          <img src="img/platforms-2.png" alt="Platforms complex view">
-        </section>
-        <section>
-          <h2>IoT Platforms contains IoT Middlewars</h2>
-        </section>
-        <section>
-          <section>
-            <h2>IoT Platforms Features</h2>
+            <h2><span class="aolab-select">NLP</span>’s Applications</h2>
             <ul>
-              <li class="aolab-orange">Support of heterogeneous devices</li>
-              <li>Open Source</li>
-              <li class="aolab-green">REST API</li>
-              <li>Data Access Control</li>
-              <li>Type:
-              <ul>
-                <li>PaaS (Platform-as-a-Service)</li>
-                <li>SaaS (Software-as-a-Service)</li>
-              </ul>
-              </li>
+                <li>Machine translation</li>
+                <li><strong>Intelligent assistants</strong></li>
+                <li><strong>Chat bots</strong></li>
+                <li>Text analysis</li>
+                <li>...</li>
             </ul>
-          </section>
-          <section>
-            <h2>IoT Platforms Features</h2>
-            <ul>
-              <li>Services:
-              <ul>
-                <li>Monitoring</li>
-                <li>Event Delivering</li>
-                <li>(Service) Discovery</li>
-                <li>Big Data Streaming</li>
-              </ul>
-              </li>
-            </ul>
-          </section>
         </section>
         <section>
-          <h2>Real platform architecture</h2>
-          <img src="img/platforms-components.png" alt="platforms components">
+            <section>
+                <h2>Approaches?</h2>
+                <ul>
+                    <li><span class="aolab-green">Machine learning</span> algorithms applied to text. The same as in
+                        machine vision, market forecast and so on.
+                    </li>
+                    <li><span class="aolab-green">Hand-crafted rules</span> manually formulated and compiled by
+                        linguists or
+                        knowledge engineers.
+                    </li>
+                </ul>
+            </section>
+            <section>
+                <h2>Machine learning?</h2>
+                <ul>
+                    <li>High recall (wider coverage)</li>
+                    <li>Need huge labeled data</li>
+                </ul>
+            </section>
+            <section>
+                <h2>Hand crafted rules</h2>
+                <ul>
+                    <li>High precision (more accurate)</li>
+                    <li>Need skilled linguists</li>
+                </ul>
+            </section>
         </section>
-        <section>
-          <section>
-            <h2>Platforms Components</h2>
-            <dl>
-              <dt>Conectivity and Normalization</dt>
-              <dd>Agents and libraries that ensure constant object connectivity and harmonized data formats</dd>
-              <dt>Device Management</dt>
-              <dd>Backend tool for the management of device status, <span class="aolab-green">remote software deployment and updates</span></dd>
-            </dl>
-          </section>
-          <section>
-            <h2>Platforms Components</h2>
-            <dl>
-              <dt>Processing and action mamagement</dt>
-              <dd>Rule engine that allows for (real-time) actions based on incoming sensor and device data</dd>
-              <dt>Data visualization</dt>
-              <dd>Graphical depiction of (real-time) sensor data</dd>
-            </dl>
-          </section>
-          <section>
-            <h2>Platforms Components</h2>
-            <dl>
-              <dt>Analytics</dt>
-              <dd>Algorithms for advanced calculations and machine learning</dd>
-              <dt>Additional tools</dt>
-              <dd>Further development tools (e.g., app prototyping, access management, reporting)</dd>
-            </dl>
-          </section>
-          <section>
-            <h2>Platforms Components</h2>
-            <dl>
-              <dt>External interfaces</dt>
-              <dd>APIs, SDKs and gateways that acts as interfaces for 3rd party systems</dd>
-              <dt>Database</dt>
-              <dd>Repository that stores the important data sets</dd>
-            </dl>
-          </section>
-        </section>
-        <section>
-          <h2>Which protocol we must use for connectivity?</h2>
-          <ul>
-            <li>WSN Protocols</li>
-            <li>TCP/IP Based protocols</li>
-          </ul>
-        </section>
-        <section>
-          <h2>Protocols in TCP/IP based Platforms</h2>
-          <img src="img/protocols.png" alt="protocols in platforms">
-        </section>
-        <section>
-          <h2>Can you build an IoT system with familiar Web technologies?</h2>
-          <ul>
-            <li>Yes you can, although the result would not be as efficient as with the newer protocols.</li>
-            <li>But efficiency depends on our agents and things</li>
-            <li>At the end, what we want to connect ?</li>
-          </ul>
-        </section>
-        <section>
-          <h2>Review on some protocols</h2>
-          <h3>TCP/IP Based for agent/platform communication</h3>
-          <dl>
-            <dt>CoAP</dt>
-            <dd>UDP - Rqst/Rspnse</dd>
-            <dt>MQTT</dt>
-            <dd>UDP - Pub/Subsrb</dd>
-            <dt>HTTP</dt>
-            <dd>TCP - Rqst/Rspnse</dd>
-            <dt>SNMP</dt>
-            <dd>UDP - Rqst/Rspnse</dd>
-          </dl>
-        </section>
-        <section>
-          <ul>
-            <li>Introduction</li>
-            <li>IoT Platforms, Why ?</li>
-            <li class="aolab-select">Platforms Review</li>
-          </ul>
-        </section>
-        <section>
-          <img src="img/platforms-wcloud.png" alt="Word Cloud of Platforms">
-        </section>
-        <section>
-          <section>
-            <h2>Kaa</h2>
-            <a href="https://www.kaaproject.org/"><img src="img/kaa.svg" alt="Kaa logo"></a>
-            <a href="https://www.kaaiot.io/"><img src="img/kaaiot.svg" width="165px" alt="KaaIoT logo"></a>
-          </section>
-          <section>
-            <h2>Kaa [Wikipedia]</h2>
-            <p>
-            Kaa is a fictional character that Rudyard Kipling describes him as an exceptionally long, yellowish Indian rock python.
-            </p>
-            <h2>Kaa [Kaa]</h2>
-            <p>
-            100% open-source Internet of Things middleware platform for everyone.
-            </p>
-          </section>
-          <section>
-            <h2>What is Kaa?</h2>
-            <ul>
-              <li>Reliable foundation for developing your connected products.</li>
-              <li><span class="aolab-green">Transport-agnostic</span> link between the hardware and application worlds.</li>
-              <li>Much more than just a message bus.</li>
-              <li><span class="aolab-orange">Customizable</span> middleware that implements necessary functional patterns for the IoT.</li>
-              <li>Cloud enablement software for your hardware products.</li>
-            </ul>
-          </section>
-          <section>
-            <h2>What does kaa do for us?</h2>
-            <ul>
-              <li>Messaging across endpoints</li>
-              <li>Notification</li>
-              <li>Collecting data from endpoints</li>
-            </ul>
-          </section>
-          <section>
-            <h2>Messaging across endpoints</h2>
-            <img src="img/kaa-messaging.png" alt="kaa messaging">
-          </section>
-          <section>
-            <h2>Messaging across endpoints</h2>
-            <ul>
-              <li>Kaa allows for delivery of events, which are structured messages, across endpoints</li>
-              <li>The event class family can be used by one or multiple applications, thus the event can be shared between applications</li>
-            </ul>
-          </section>
-          <section>
-            <h2>Notification</h2>
-            <img src="img/kaa-notification.png" alt="kaa notification">
-          </section>
-          <section>
-            <h2>Notification</h2>
-            <ul>
-              <li>Kaa uses notifications to distribute structured messages, posted within notification topics, from the server to endpoints</li>
-            </ul>
-          </section>
-          <section>
-            <h2>Collecting data from endpoints</h2>
-            <img src="img/kaa-collecting-data.png" alt="kaa data collecting">
-          </section>
-          <section>
-            <h2>Collecting data from endpoints</h2>
-            <ul>
-              <li>Kaa provides rich capabilities for collecting and storing structured data from endpoints</li>
-            </ul>
-          </section>
-        </section>
-        <section>
-          <section>
-            <h2>Thingsboard</h2>
-            <a href="https://thingsboard.io/"><img src="img/thingsboard.png" alt="thingsboard logo"></a>
-          </section>
-          <section>
-            <h2>What is ThingsBoard?</h2>
-            <p>
-            Open-source IoT Platform - Device management, data collection, processing and visualization.
-            </p>
-          </section>
-          <section>
-            <h2>What does thingsboard do for us?</h2>
-            <ul>
-              <li>Provision and control devices</li>
-              <li>Collect and visualize data from devices</li>
-              <li>Analyze device data and trigger alarms</li>
-              <li>Deliver device data to other systems</li>
-              <li>Enable use-case specific features using customizable rules and plugins</li>
-            </ul>
-          </section>
-          <section>
-            <h2>Supported Protocols</h2>
-            <ul>
-              <li>MQTT</li>
-              <li>CoAP</li>
-              <li>HTTP</li>
-            </ul>
-          </section>
-        </section>
-        <section>
-          <section>
-            <h2>Home-Assistant</h2>
-            <a href="https://home-assistant.io/"><img src="img/home-assistant.png" alt="home-assistant logo"></a>
-          </section>
-          <section>
-            <h2>What is Home-Assistant?</h2>
-            <p>Open-source home automation platform running on Python 3</p>
-          </section>
-          <section>
-            <h2>What does Home-Assistant do for us?</h2>
-            <ul>
-              <li>Home Assistant will track the state of all the devices in your home, so you don't have to</li>
-              <li><span class="aolab-orange">Control</span> all your devices from a single, mobile-friendly, interface</li>
-              <li>Set up advanced <span class="aolab-green">rules</span> to control devices and bring your home alive.</li>
-            </ul>
-          </section>
-          <section>
-            <h2>Automating Home Assistant</h2>
-            <pre><code>
-            (trigger)    When Paulus arrives home
-            (condition)  and it is after sunset:
-            (action)     Turn the lights in the living room on
-            </code></pre>
-          </section>
-        </section>
-        <section>
-          <section>
-            <h2>I1820</h2>
-            <a href="https://I1820.github.io"><img src="img/i1820.png" alt="i1820 logo" height="300px"></a>
-          </section>
-          <section>
-            <h2>What is I1820?</h2>
-            <p>
-            I1820 is a free open source platform which provides
-            <span class="aolab-orange">discovery</span>, <span class="aolab-green">data collection</span> and <span class="aolab-orange">configuration</span> services
-            based on MQTT.
-            I1820 implements a REST API for controlling the things
-            and it stores all collected data in a Time-Series database named InfluxDB.
-            </p>
-          </section>
-          <section>
-            <h2>What does I1820 do for us?</h2>
-            <ul>
-              <li>Collecting data from the endpoints</li>
-              <li>Schema less but model based thing definition</li>
-              <li>MongoDB - InfluxDB supported</li>
-              <li>Provides streams for data analyzers</li>
-            </ul>
-          </section>
-        </section>
-        <section>
-          <h2>Thank you</h2>
-        </section>
-      </div>
-    </div>
-		<script src="lib/js/head.min.js"></script>
-		<script src="js/reveal.js"></script>
 
-		<script>
-			// More info https://github.com/hakimel/reveal.js#configuration
-			Reveal.initialize({
-				history: true,
+        <section>
+            <ul>
+                <li>Introduction</li>
+                <li class="aolab-select">EACL Best papers</li>
+                <li>NLP @ ISIN</li>
+            </ul>
+        </section>
+        <section>
+            <section>
+                <h2>If You Can’t Beat Them Join Them:</h2>
+                <div>
+                    <header><span class="aolab-green">Handcrafted Features Complement Neural Nets </span>for Non-Factoid
+                        Answer Reranking
+                    </header>
+                </div>
+            </section>
+            <section>
+                <h2>Answer Reranking</h2>
+                <div>
+                    <p>
+                        Given a list of candidate
+                        answers to a question, <span class="aolab-green">order</span> the answers
+                        according to their <span class="aolab-green">relevance to the question</span>.
+                    </p>
+                </div>
+            </section>
+            <section>
+                <h2>Community Question Answering</h2>
+                <span>
+                <img src="img/quora.png" height="100px">
+                    </span>
+                <span>
+                <img src="img/se-logo.png" height="100px">
+                    </span>
+            </section>
+            <section>
+                <h4>New State of the Art</h4>
+                <img src="img/join_them.png" height="550px">
+            </section>
+        </section>
+        <section>
+            <section>
+                <h2>Gated End-to-End <span class="aolab-green">Memory Networks</span></h2>
+                <div>
+                    <span>fliu3@student.unimelb.edu.au</span>
+                </div>
+                <div>
+                    <span>julien.perez@xrce.xerox.com</span>
+                </div>
+            </section>
+            <section>
+                <img src="img/end_to_end_architecture.png">
+            </section>
+            <section>
+                <img src="img/end_to_end.gif">
+            </section>
+            <section>
+                <h2>Dialog state tracking, a machine reading approach using <span
+                        class="aolab-green">Memory Networks</span></h2>
+                <div>
+                    <span>julien.perez@xrce.xerox.com</span>
+                </div>
+                <div>
+                    <span>fliu3@student.unimelb.edu.au</span>
+                </div>
+            </section>
+        </section>
+        <section>
+            <section>
+                <h2>Bag of Tricks for <span
+                        class="aolab-green">Efficient</span> Text Classification</h2>
+                <div>
+                    <span>Armand Joulin @ FAIR</span>
+                </div>
+                <div>
+                    <span>Edouard Grave @ FAIR</span>
+                </div>
+                <div>
+                    <span>Piotr Bojanowski @ FAIR</span>
+                </div>
+                <div>
+                    <span>Tomas Mikolov @ FAIR</span>
+                </div>
+            </section>
+            <section>
+                <h2><span class="aolab-green">Text Classification</span></h2>
+                <ul>
+                    <li><span>Web search</span></li>
+                    <li><span>Information ranking</span></li>
+                    <li><span>Information retrieval</span></li>
+                    <li><span>Document classification</span></li>
+                </ul>
+            </section>
+            <section>
+                <img src="img/kim.png">
+            </section>
+            <section>
+                <img src="img/fastText.png">
+            </section>
+            <section>
+                <h2><span class="aolab-green">600x</span> speed up </h2>
+                <ul>
+                    <li>Amazon product dataset</li>
+                    <li><strong>95.7%</strong> accuracy obtained in <span class="aolab-orange">7h </span> with Conneau et al. (2016)</li>
+                    <li><strong>94.6%</strong> accuracy obtained in <span class="aolab-orange">10s</span> with fastText (2016)</li>
+                </ul>
+            </section>
+        </section>
+        <section>
+            <h2>References:</h2>
+            <ul>
+                <li>https://www.linkedin.com/pulse/overview-natural-language-processing-wei-li</li>
+                <li>Schema less but model based thing definition</li>
+            </ul>
+        </section>
+        <section>
+            <h2>Thank you</h2>
+        </section>
+    </div>
+</div>
+<script src="lib/js/head.min.js"></script>
+<script src="js/reveal.js"></script>
+
+<script>
+    // More info https://github.com/hakimel/reveal.js#configuration
+    Reveal.initialize({
+        history: true,
         controls: true,
         slideNumber: true,
 
-				// More info https://github.com/hakimel/reveal.js#dependencies
-				dependencies: [
-					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
-				]
-			});
-		</script>
-	</body>
+        // More info https://github.com/hakimel/reveal.js#dependencies
+        dependencies: [
+            {
+                src: 'plugin/highlight/highlight.js', async: true, callback: function () {
+                hljs.initHighlightingOnLoad();
+            }
+            }
+        ]
+    });
+</script>
+</body>
 </html>
